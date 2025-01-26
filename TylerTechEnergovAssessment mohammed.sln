@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TylerTechEnergovAssessment 
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "p1", "p1\p1.esproj", "{AC4C6E85-FC52-425B-B966-40A89C07521B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angualr with asp.net core", "angualr with asp.net core\angualr with asp.net core.csproj", "{738D5C8F-B50F-41AA-A160-60D815E1868B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "personnel-management", "angualr with asp.net core\personnel-management.csproj", "{738D5C8F-B50F-41AA-A160-60D815E1868B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
