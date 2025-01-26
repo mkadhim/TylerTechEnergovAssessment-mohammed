@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TylerTechEnergovAssessment mohammed", "TylerTechEnergovAssessment mohammed\TylerTechEnergovAssessment mohammed.csproj", "{00FCF3F0-EEFF-4352-AAEB-A65C054EF0D9}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "p1", "p1\p1.esproj", "{AC4C6E85-FC52-425B-B966-40A89C07521B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angualr with asp.net core", "angualr with asp.net core\angualr with asp.net core.csproj", "{738D5C8F-B50F-41AA-A160-60D815E1868B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{00FCF3F0-EEFF-4352-AAEB-A65C054EF0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FCF3F0-EEFF-4352-AAEB-A65C054EF0D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FCF3F0-EEFF-4352-AAEB-A65C054EF0D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4C6E85-FC52-425B-B966-40A89C07521B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4C6E85-FC52-425B-B966-40A89C07521B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4C6E85-FC52-425B-B966-40A89C07521B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC4C6E85-FC52-425B-B966-40A89C07521B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4C6E85-FC52-425B-B966-40A89C07521B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4C6E85-FC52-425B-B966-40A89C07521B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{738D5C8F-B50F-41AA-A160-60D815E1868B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738D5C8F-B50F-41AA-A160-60D815E1868B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738D5C8F-B50F-41AA-A160-60D815E1868B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738D5C8F-B50F-41AA-A160-60D815E1868B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
