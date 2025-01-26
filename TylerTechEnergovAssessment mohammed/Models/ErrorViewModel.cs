@@ -1,4 +1,7 @@
 // Models/Employee.cs
+using System.Collections.Generic;
+
+
 public class Employee
 {
     public int EmployeeID { get; set; }
@@ -13,3 +16,4 @@ public class Role
     public int RoleID { get; set; }
     public string RoleName { get; set; }
 }
+
