@@ -1,9 +1,15 @@
-namespace TylerTechEnergovAssessment_mohammed.Models
+// Models/Employee.cs
+public class Employee
 {
-    public class ErrorViewModel
-    {
-        public string? RequestId { get; set; }
+    public int EmployeeID { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int? ManagerID { get; set; }
+}
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-    }
+// Models/Role.cs
+public class Role
+{
+    public int RoleID { get; set; }
+    public string RoleName { get; set; }
 }
