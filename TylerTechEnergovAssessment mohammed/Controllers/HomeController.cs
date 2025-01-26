@@ -4,29 +4,38 @@ using TylerTechEnergovAssessment_mohammed.Models;
 
 namespace TylerTechEnergovAssessment_mohammed.Controllers
 {
-    public class HomeController : Controller
+
+    // Controllers/EmployeesController.cs
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using System.Linq;
+
+    [ApiController]
+    [Route("api/[controller]")]
+    public class EmployeesController : ControllerBase
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public EmployeesController(AppDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        [HttpGet("{managerId}")]
+        public IActionResult GetEmployeesByManager(int managerId)
         {
-            return View();
+            var employees = _context.Employees
+                                     .Where(e => e.ManagerID == managerId)
+                                     .ToList();
+            return Ok(employees);
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult AddEmployee([FromBody] Employee employee)
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            _context.Employees.Add(employee);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(GetEmployeesByManager), new { id = employee.EmployeeID }, employee);
         }
     }
 }
