@@ -1,0 +1,21 @@
+namespace angualr_with_asp.net_core.ClientApp.src.app.Components
+{
+<!-- src/app/components/add-employee.component.html -->
+<div>
+  <h2>Add New Employee</h2>
+  <form (ngSubmit)="addEmployee()">
+    <label for="firstName">First Name:</label>
+    <input type="text" [(ngModel)]="newEmployee.firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" [(ngModel)]="newEmployee.lastName" name="lastName" required>
+
+    <label for="managerId">Manager:</label>
+    <select [(ngModel)]="newEmployee.managerID" name="managerId">
+      <option *ngFor="let manager of managers" [value]="manager.employeeID">{{ manager.firstName }} {{ manager.lastName }}</option>
+    </select>
+
+    <button type="submit">Save</button>
+  </form>
+</div>
+}

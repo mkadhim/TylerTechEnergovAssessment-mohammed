@@ -1,0 +1,27 @@
+namespace angualr_with_asp.net_core.ClientApp.src.app.Components
+{
+<!-- src/app/components/employee-list.component.html -->
+<div>
+  <h2>Employees Reporting to Manager</h2>
+  <select [(ngModel)]="selectedManagerId" (change)="loadEmployees()">
+    <option *ngFor="let manager of managers" [value]="manager.employeeID">{{ manager.firstName }} {{ manager.lastName }}</option>
+  </select>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Last Name</th>
+        <th>First Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.employeeID }}</td>
+        <td>{{ employee.lastName }}</td>
+        <td>{{ employee.firstName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+}
